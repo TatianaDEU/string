@@ -2,7 +2,7 @@
 let result = '';
 let newStr = '';
 
-function isValid(str) {
+function isLang(str) {
     if (str.length > 10) {
         newStr = str.slice(0, 10);
         console.log(newStr);

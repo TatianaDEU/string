@@ -2,7 +2,6 @@
 let result = '';
 let newStr = '';
 
-
 function isValid(str) {
     if (str.length > 10) {
         newStr = str.slice(0, 10);
@@ -10,9 +9,10 @@ function isValid(str) {
     }
 }
 
+
 function toUpCase(str) {
     if (str[0].toLowerCase()) {
-        newStr = str[0].toUpperCase();
+        newStr = str[0].toUpperCase() + str.slice(1);
 
     }
     console.log(newStr);
@@ -20,7 +20,7 @@ function toUpCase(str) {
 
 
 function showVerticalMessage(str) {
-    if (isValid() && toUpCase()) {
+    if (isValid && toUpCase) {
         for (let i = 0; i < str.length; i++) {
 
             result = str[i] + '\n';
@@ -29,4 +29,5 @@ function showVerticalMessage(str) {
     }
 }
 
+//toUpCase('dndndn');
 showVerticalMessage('marathonmmmmmmm');
